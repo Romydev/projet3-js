@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Location de vélo: Ville de Lyon</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg" href="img/silhouettevelo.svg" />
+
+
+    <!--      Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--      Mobile     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--      Ajout de polices en ligne  -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700%7CRoboto:300,400,500%7CMuli:300,400" rel="stylesheet">
+    <script src="https://use.fontawesome.com/846ca6493d.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--reseau sociaux-->
+    <meta name="description" content="Site de location de vélo de la ville de lyon" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Site de location de vélo de la ville de lyon">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Location de vélo à Lyon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/img/silhouettevelo.svg" />
+    <meta property="og:description" content="Site de location de vélo de la ville de lyon" />
+    <!--reseau sociaux-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <div class="brand-logo">
+                    <a href="#" id="logo-container" class=""><img src="img/logo-velov.png" alt="logo velov" height="38" width="113" ></a>
+                </div>
+                <ul id="navigation" class="right hide-on-med-and-down">
+                    <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                    <li><a href="#application">L'application</a></li>
+                    <li><a href="#votre-reservation">Votre réservation</a></li>
+                </ul>
+                <!-- ul.right hide-on-med-and-down -->
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                    <li><a href="#application">L'application</a></li>
+                    <li><a href="#votre-reservation">Votre réservation</a></li>
+                </ul>
+                <!-- ul.side-nav -->
+
+            </div>
+            <!-- div.nav-wrapper container -->
+        </nav>
+    </header>
+
+    <section id="helpSection" class="row ">
+        <div class="container hide-on-small-only">
+            <div class="row">
+                <div id="divHelp" class="col m12 l12 hide-on-small-only ">
+                    <div id="slider-container" class="container z-depth-2 hide-on-small-only">
+                        <h4 id="comment-ca-marche" class="center">Louez votre Velov en 3 étapes</h4>
+                        <ul class="slider">
+
+                            <li id="slide3" class="slide showing imglider"><img src="img/slide_3.jpg" alt="Présentation de Vélov" /></li>
+
+                            <li id="slide2" class="slide showing imglider"><img src="img/slide_2.jpg" alt="Présentation de Vélov" /></li>
+
+                            <li id="slide1" class="slide showing imglider"><img src="img/slide_1.jpg" alt="Présentation de Vélov" /></li>
+
+                        </ul>
+                        <div class="fleche">
+
+                            <button class="control" id="fleche_gauche"><i class="fa fa-backward" aria-hidden="true"></i></button>
+
+                            <button class="control" id="fleche_droite"><i class="fa fa-forward" aria-hidden="true"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 hide-on-med-and-up">
+
+            <ul class="collapsible white" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <h4>Louez votre Velov en 3 étapes</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">location_on</i>Trouver la station la plus proche</div>
+                    <div class="collapsible-body"><span>Rechercher votre station sur la carte</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">directions_bike</i>Réserver un vélo</div>
+                    <div class="collapsible-body"><span>Si un vélo est disponible, à l'aide du bouton vert ouvrez le panel de réservation.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">done</i>Confirmer votre réservation</div>
+                    <div class="collapsible-body"><span>Signez dans l'espace prévue à cette effet et valider votre réservation.</span></div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <!-- section carte + résa -->
+
+    <section id="resa" class="row ">
+        <div id="map-container" class=" col s12 m12 l8">
+            <div id="map" class="z-depth-2">>
+
+            </div>
+        </div>
+        <div id="formResa" class="col s12 m12 l4">
+
+            <h3 id="titre_resa">Effectuer votre réservation</h3>
+
+
+            <form>
+                <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Votre Prénom" required />
+
+                <input type="text" class="form-control" name="nom" id="nom" placeholder="Votre Nom" required />
+
+                <canvas id="canvas" width="300" height="100">Votre nagivateur ne supoprte pas canvas.</canvas>
+                <button id="reset" type="reset" value="Reset" class="btn btn-primary ">annuler</button>
+                <button id="save" type="submit" class="btn btn-primary">Reserver</button>
+
+
+            </form>
+
+        </div>
+
+
+        <div id="tableauDonees" class="col s12 m12 l4">
+            <table id="application" class="white striped">
+                <thead>
+                    <tr>
+                        <th data-field="name" colspan="2" class="center-align">Station sélectionnée</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="info-station-titles">Nom :</td>
+                        <td><span id="infoNname" class="info-station"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="info-station-titles">Status :</td>
+                        <td><span id="status" class="info-station"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="info-station-titles">Adresse :</td>
+                        <td><span id="address" class="info-station"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="info-station-titles">Capacité :</td>
+                        <td><span id="total" class="info-station"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="info-station-titles">Vélo disponibles :</td>
+                        <td><span id="availableBikes" class="info-station"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="info-station-titles">Emplacement disponible :</td>
+                        <td><span id="availableStands" class="info-station"></span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button id="btnresa" type="button" class="btn btn-primary btn-lg btn-block hidden">Confirmer la reservation</button>
+
+
+
+        </div>
+        <div id="confirmation">
+            <p>votre réservation est validée</p>
+        </div>
+
+
+    </section>
+
+    <footer id="votre-reservation" class="footer grey darken-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h2> Etat de votre réservation </h2>
+                    <span id="nomRecuper"></span><br />
+                    <p id="reservation-timer">Une réservation est en cours à la station <span id="stationS"></span> La réservation expirera dans <span id="minutes"> </span> minute(s) et <span id="secondes"></span> seconde(s)</p>
+                    <p id="expiration"> Votre réservation à expirer ! </p>
+                    <button id="button-annuler" class="btn btn-primary"> Annuler</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!--     Appel de l'api  map   -->
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/markerclusterer.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/resa.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3i_UlC3RGdvpy8sqCDitpdczU_Mgyuxw&callback=initMap" async defer></script>
+</body>
+
+</html>

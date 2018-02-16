@@ -1,0 +1,212 @@
+body {
+    background-color: #F1F1F1 !important;
+
+}
+
+#logo-container {
+    color: white !important;
+}
+
+header {
+    background-color: #212121 !important
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: white !important;
+    padding-bottom: 5px;
+    font-size: 2.2rem !important;
+    line-height: 110%;
+
+}
+
+p {
+    color: black;
+}
+
+#helpSection {
+    height: 220px;
+    margin: 10px
+}
+
+
+
+ul li img {
+    position: absolute;
+}
+
+ul.slider {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resa {
+    height: 440px;
+    margin: 10px;
+}
+
+#map-container {
+    height: 100%;
+    margin-top: 35px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.imglider {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+
+.slide figcaption {
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+#canvas {
+    border: 1px solid grey;
+}
+
+#tableauDonees {
+    margin-top: 35px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    height: 100%;
+}
+
+#navigation {
+    color: white;
+}
+
+#navigation :hover {
+    color: #E11F26 !important;
+}
+
+#formResa {
+    display: none;
+    margin-top: 35px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+#votre-reservation p {
+
+    color: white !important;
+
+}
+
+.darken-4 {
+    margin-top: 350px !important;
+    color: white;
+
+}
+
+#btnresa {
+    margin-top: 7px;
+    margin-bottom: 12px;
+    background-color: #212121;
+    !important;
+}
+
+#reset {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #212121;
+    !important;
+}
+
+#save {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #212121;
+    !important;
+}
+
+#button-annuler {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: #E10203;
+    !important;
+}
+
+#btnmodal {
+    margin-top: 7px;
+    margin-bottom: 12px;
+    background-color: #212121;
+    !important;
+}
+
+#messageClear {
+    display: none;
+}
+
+#slider-container {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    !important;
+    background-color: white;
+}
+
+#control-container {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    bottom: 20px;
+    right: 50px;
+    z-index: 20;
+}
+
+#slider {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100% !important;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.slide img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.container {
+    width: 100% !important;
+    height: 80% !important;
+}
+
+#confirmation {
+    display: none;
+    color: darkolivegreen;
+    background-color: forestgreen;
+    border: 1px solid green;
+
+}
