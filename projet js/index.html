@@ -70,7 +70,12 @@
             <div class="row">
                 <div id="divHelp" class="col m12 l12 hide-on-small-only ">
                     <div id="slider-container" class="container z-depth-2 hide-on-small-only">
-                        <h4 id="comment-ca-marche" class="center">Louez votre Velov en 3 étapes</h4>
+                        <h5 id="comment-ca-marche" class="center">Louez votre Velov en 3 étapes</h5>
+
+                        <button id="fleche_gauche" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">skip_previous</i></button>
+
+                        <button id="fleche_droite" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">skip_next</i></button>
+
                         <ul class="slider">
 
                             <li id="slide3" class="slide showing imglider"><img src="img/slide_3.jpg" alt="Présentation de Vélov" /></li>
@@ -80,13 +85,7 @@
                             <li id="slide1" class="slide showing imglider"><img src="img/slide_1.jpg" alt="Présentation de Vélov" /></li>
 
                         </ul>
-                        <div class="fleche">
 
-                            <button class="control" id="fleche_gauche"><i class="fa fa-backward" aria-hidden="true"></i></button>
-
-                            <button class="control" id="fleche_droite"><i class="fa fa-forward" aria-hidden="true"></i></button>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -101,11 +100,11 @@
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header active"><i class="material-icons">location_on</i>Trouver la station la plus proche</div>
+                    <div class="collapsible-header"><i class="material-icons">location_on</i>Trouver la station la plus proche</div>
                     <div class="collapsible-body"><span>Rechercher votre station sur la carte</span></div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">directions_bike</i>Réserver un vélo</div>
+                    <div class="collapsible-header"><i class="material-icons ">directions_bike</i>Réserver un vélo</div>
                     <div class="collapsible-body"><span>Si un vélo est disponible, à l'aide du bouton vert ouvrez le panel de réservation.</span></div>
                 </li>
                 <li>
@@ -193,23 +192,23 @@
 
     </section>
 
-    <footer id="votre-reservation" class="footer grey darken-4 ">
-        <div class="container">
+    <footer id="votre-reservation">
+        <div class="container ">
             <div class="row">
                 <div class="col l6 s12">
-                    <h2> Etat de votre réservation </h2>
+                    <h5> Etat de votre réservation </h5>
                     <span id="nomRecuper"></span><br />
                     <p id="reservation-timer">Une réservation est en cours à la station <span id="stationS"></span> La réservation expirera dans <span id="minutes"> </span> minute(s) et <span id="secondes"></span> seconde(s)</p>
                     <p id="expiration"> Votre réservation à expirer ! </p>
-                    <button id="button-annuler" class="btn btn-primary"> Annuler</button>
+                    <button id="button-annuler" class="btn btn-lg waves-effect waves-light"> Annuler</button>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/ajax.js"></script>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 

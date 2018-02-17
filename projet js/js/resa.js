@@ -4,9 +4,10 @@ function Reservation() {
 
     this.init = function () {
         canvas.init();
+        console.log(canvas);
         $("#save").click(function (e) { // action du btn save du canvas
             e.preventDefault()
-            if (canvas.validateFirm) {
+            if (canvas.validateFirm()) {
                 var dateFinReservation = new Date();
                 dateFinReservation.setMinutes(dateFinReservation.getMinutes() + 20);
                 sessionStorage.setItem("dateFinReservation", dateFinReservation);

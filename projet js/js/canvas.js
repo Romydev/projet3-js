@@ -35,21 +35,20 @@ function myCanvas() {
         });
 
         self.canvas.bind("touchstart", function (e) {
+            var touch = e.originalEvent.changedTouches[0];
 
-            console.log(e.originalEvent.changedTouches[0].clientX - this.offsetLeft);
-            console.log(myCanvas.canvas.offsetTop );
             e.preventDefault();
             self.paint = true;
-            self.addClick(e.originalEvent.changedTouches[0].clientX - this.canvas.offsetTop, e.originalEvent.changedTouches[0].clientY -200);
+            self.addClick(touch.pageX - self.canvas[0].offsetLeft , touch.pageY - self.canvas[0].offsetTop);
             self.redraw();
 
         });
 
         self.canvas.bind("touchmove", function (e) {
             e.preventDefault();
-
+            var touch = e.originalEvent.changedTouches[0];
             if (self.paint === true) {
-                self.addClick(e.originalEvent.changedTouches[0].clientX - this.offsetLeft, e.originalEvent.changedTouches[0].clientY -200, true);
+                self.addClick(touch.pageX - self.canvas[0].offsetLeft ,  touch.pageY - self.canvas[0].offsetTop, true);
                 self.redraw();
             }
 

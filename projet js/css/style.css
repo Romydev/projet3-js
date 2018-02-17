@@ -1,3 +1,62 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: table;
+    width: 100%;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+.row {
+    margin: 0;
+    /* No space between rows and their content */
+}
+
+.label {
+    font-size: 14px;
+    /* Setting bootstrap label to suit fontsize of the page */
+}
+
+#helpSection {
+    height: 120px;
+
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.row .col {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* Container Media Settings*/
+
+@media only screen and (min-width: 0px) {
+    /* 601 */
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+ul li a:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
 body {
     background-color: #F1F1F1 !important;
 
@@ -24,12 +83,43 @@ p {
     color: black;
 }
 
-#helpSection {
-    height: 220px;
-    margin: 10px
+
+#slider-container {
+
+    padding: 0px;
+
 }
 
 
+
+#slider {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
 
 ul li img {
     position: absolute;
@@ -43,31 +133,19 @@ ul.slider {
 #resa {
     height: 440px;
     margin: 10px;
+    margin-bottom: 30px;
 }
 
 #map-container {
     height: 100%;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 
 #map {
     height: 100%;
     width: 100%;
 }
-
-.imglider {
-    margin-top: 10px;
-    margin-left: 0px;
-}
-
-
-.slide figcaption {
-    width: 80%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-}
-
 
 
 
@@ -80,6 +158,16 @@ ul.slider {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     background-color: white;
     height: 100%;
+    margin-bottom: 30px;
+}
+
+table th {
+    color: rgb(33, 33, 33);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0 10px 20px;
+    text-align: left;
 }
 
 #navigation {
@@ -95,6 +183,7 @@ ul.slider {
     margin-top: 35px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     background-color: white;
+    margin-bottom: 30px;
 }
 
 #votre-reservation p {
@@ -134,7 +223,7 @@ ul.slider {
     margin-top: 8px;
     margin-bottom: 20px;
     background-color: #E10203;
-    !important;
+    color: white;
 }
 
 #btnmodal {
@@ -189,8 +278,10 @@ ul.slider {
 .slide img {
     max-width: 80%;
     height: auto;
-    margin-left: 240px;
-    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: -2px;
+    z-index: 2;
+
 }
 
 .showing {
@@ -209,4 +300,57 @@ ul.slider {
     background-color: forestgreen;
     border: 1px solid green;
 
+}
+
+#votre-reservation {
+    background-color: black !important;
+    color: white;
+    display: table-row;
+    height: 100px;
+    /* à titre d'exemple */
+}
+
+#fleche_gauche {
+
+    position: absolute;
+
+    top: 50%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    /* border-radius: 50%;*/
+    font-size: 1em;
+    color: white;
+
+    border-radius: 0px 40px 40px 0px;
+    /* demi cercle */
+    z-index: 20;
+
+
+}
+
+#fleche_droite {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    font-size: 1em;
+    color: white;
+    border-radius: 40px 0px 0px 40px;
+    z-index: 20;
+}
+
+#timeline {
+    position: absolute;
+    background: #999;
+    bottom: 15px;
+    left: 15px;
+    height: 1px;
+    background: rgb(214, 98, 13);
+    background: rgba(214, 98, 13, .8);
+    width: 0;
+    /* fonction d'animation */
+    animation: timeliner 32s infinite;
+    z-index: 22;
 }
