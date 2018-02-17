@@ -340,17 +340,3 @@ table th {
     border-radius: 40px 0px 0px 40px;
     z-index: 20;
 }
-
-#timeline {
-    position: absolute;
-    background: #999;
-    bottom: 15px;
-    left: 15px;
-    height: 1px;
-    background: rgb(214, 98, 13);
-    background: rgba(214, 98, 13, .8);
-    width: 0;
-    /* fonction d'animation */
-    animation: timeliner 32s infinite;
-    z-index: 22;
-}

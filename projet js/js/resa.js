@@ -19,6 +19,7 @@ function Reservation() {
                 $("#reservation-timer").css('display', 'block');
                 $("#expiration").css('display', 'none');
                 $("#tableauDonees").css('display', 'block');
+                $("#button-annuler").css('display', 'block');
             }
 
         });
@@ -57,10 +58,11 @@ function Reservation() {
             $('#secondes').text(0);
             $("#reservation-timer").css('display', 'none');
             $("#expiration").css('display', 'block');
+            $("#button-annuler").css('display', 'none');
 
         }
     }
-    setTimeout(self.decompte, 1000);//decremente par 1seconde
+    setTimeout(self.decompte, 1000); //decremente par 1seconde
 }
 
 $(function () {
