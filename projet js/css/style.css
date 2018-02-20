@@ -151,6 +151,8 @@ ul.slider {
 
 #canvas {
     border: 1px solid grey;
+    margin-left: 35px;
+    margin-top: 15px;
 }
 
 #tableauDonees {
@@ -184,6 +186,7 @@ table th {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     background-color: white;
     margin-bottom: 30px;
+    height: 100%;
 }
 
 #votre-reservation p {
@@ -207,14 +210,14 @@ table th {
 
 #reset {
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-left: 35px;
     background-color: #212121;
     !important;
 }
 
 #save {
     margin-top: 8px;
-    margin-bottom: 20px;
+
     background-color: #212121;
     !important;
 }
